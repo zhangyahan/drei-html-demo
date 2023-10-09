@@ -10,4 +10,30 @@ html, body, #root {
 
 * {
   box-sizing: border-box;
+  user-select: none;
+}
+
+.scale-fade-enter-active,
+.scale-fade-exit-active {
+  transition: all 500ms;
+}
+
+.scale-fade-enter {
+  transform: scale(1.72, 0.8);
+  opacity: 0;
+}
+
+.scale-fade-enter-active {
+  transform: scale(1.0, 1.0);
+  opacity: 1;
+}
+
+.scale-fade-exit {
+  transform: scale(1.0, 1.0);
+  opacity: 1;
+}
+
+.scale-fade-exit-active {
+  transform: scale(1.72, 0.8);
+  opacity: 0;
 }
